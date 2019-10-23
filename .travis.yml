@@ -12,7 +12,7 @@ env:
   - secure: "lbXmIOcqMHHjVOFY2WHomv7GiIGpRHV/0BnjpQHJJUAF+tsPU9DX7xwaPQpH3Gftbua5bK0nNI9WtrnxAC+eaxrJAgveKMNza99dRr7BiHQNQGE4MtZNd/Lf9CVhuM9RX1X21K9fWncASC+Bi7Yb/OGxx/64yzWWawhyAlK3oyGZXkqeX/O1THDtJkmh6GxsqOcRAH3SLfIA0yc9HoUSueUe0i23q4SI9R2MURot5S/BwgtnyYLBll09UakrTcwW9ytkeCyfJbW3At+/1cy2KhO3021+/uLBV85Bl2wgdMd75FP5VauxElPrYqwQVqkSdD6IXmSoyeOyl1T7QHc4wbcJCP/5rYwPesIrR4ugCzX1yvPV8qoW+j62IEiCMrDfjPHIYHRZAqQKx27lhOnIhsHVY4punAZvVTvsdD/vd5tHCvqjqGnQrttuoD6075ZTAsaGmQHJe+P4OWU3C14ws1IWU6X8W3qZ97h4gWSInqZnxal4OJqc2OkalPwVJt/LKLBVyLOZ62uQrmIjW8sB4J8xRb22skxm8T98QJJ+64UVI/nPauMpMqO/AFSKc7eHDbrqmJaPbfIdm+HnG0j58LvzkMMmlb2SVHkEB4hVb8UF9F6K2+/7kC9X6JZTC+58K5tDa1GXKWujnUShWEUI29tSmf8F1x6pW82ARKyR++o="
   - secure: "FG3IjnY9zOVSLr+9XjA2nbEODcjqTjw/OTWg1EjHoZiW4q12gGmz3lOvaYNYeYPzndS3hBWqfcVV/hSdyxF3I8UrLWqYFmREaUWj+n5TE6jsPkBtTTgpplOdJtryihvDz6MU3VqUtdJh1d2/jRMHSDriKzW8MR5eNf2tErEb6qtPK8a4NQOmbN5dDOmTFqTD5cMEbOjLx+CUpQMmjaVVJU2ZgZaZUSws9Z/yh583XoQODmxtiLpK6t2XUBzte4mTkaX55lD7jHKiGrd+HV5/KDg9b+U6Rvxo3Enw/azZx1JzRdaIvpwVqFWvQikUZXZx+foIWVos4bnao/s0rs3QLq1DqPTXw+fR22yiIhEr8VWrou+oiUVuhVjvZn4MoujSkWnyQ65QocjSnnOeExLZruDM2tKePZIyIU+67MOYzDiqiNUQj9VV4jqeCvxzvmaL4duUbQNkXjNbu5P7EEcoXhki3yjCjzwTABRyFRw0lufyZ40XEaIIj8XFgxiRrZclUM/HCVLN3ZhbTWTONQS9vvpPajhZD8xaItsFqBF+sSbZE8iK6JXzto0t/MHXqSw+z1tp04bLmbuuTgtYCNXmRZb2X1x3bmvGVrOA2s8QSRDzwNUsiubaqvrZZY1MzuW8H7JruJEJD0Zx3Zd1sf9U2DaIcqL7yXvyfzTkpB3gN3c="
   - COMMIT=${TRAVIS_COMMIT::7}
-  - IMAGE_NAME=todo-api-spring-boot
+  - IMAGE_NAME=todo-api-spring-boot-newman
 
 
 addons:
@@ -44,6 +44,6 @@ after_success:
 deploy:
   provider: heroku
   api_key: $HEROKU_API_KEY
-  app: samkaz-todo-api-spring-boot
+  app: samkaz-todo-api-spring-boot-newman
   on:
     branch: release

@@ -5,7 +5,7 @@ declare dc_main=${project_dir}/docker/docker-compose.yml
 declare dc_platform=${project_dir}/docker/docker-compose-platform.yml
 declare dc_elk=${project_dir}/docker/docker-compose-elk.yml
 declare dc_monitoring=${project_dir}/docker/docker-compose-monitoring.yml
-declare todo_api="todo-api-spring-boot"
+declare todo_api="todo-api-spring-boot-newman"
 declare sonarqube="sonarqube"
 declare elk="elasticsearch logstash kibana"
 declare monitoring="prometheus grafana"
@@ -16,7 +16,7 @@ function restart() {
 }
 
 function start() {
-    echo 'Starting todo-api-spring-boot....'
+    echo 'Starting todo-api-spring-boot-newman....'
     build_api
     docker-compose -f ${dc_main} up --build --force-recreate -d ${todo_api}
     docker-compose -f ${dc_main} logs -f

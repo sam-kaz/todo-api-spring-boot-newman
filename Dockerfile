@@ -1,6 +1,6 @@
 FROM fabric8/java-alpine-openjdk8-jre
 VOLUME /tmp
-ADD target/todo-api-spring-boot-0.0.1.jar app.jar
+ADD target/todo-api-spring-boot-newman-0.0.1.jar app.jar
 RUN sh -c 'touch /app.jar'
 ENV JAVA_OPTS="-Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8787,suspend=n"
 ENV SPRING_PROFILES_ACTIVE "docker"

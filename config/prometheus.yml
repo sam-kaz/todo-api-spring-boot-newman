@@ -28,7 +28,7 @@ scrape_configs:
   static_configs:
   - targets: ['localhost:9090']
 
-- job_name: 'todo-api-spring-boot-local'
+- job_name: 'todo-api-spring-boot-newman-local'
 
   metrics_path: '/actuator/prometheus'
   scrape_interval: 5s
@@ -36,9 +36,9 @@ scrape_configs:
   - targets: ['localhost:18080']
 
 
-- job_name: 'todo-api-spring-boot-docker'
+- job_name: 'todo-api-spring-boot-newman-docker'
 
   metrics_path: '/actuator/prometheus'
   scrape_interval: 5s
   static_configs:
-  - targets: ['todo-api-spring-boot:8080']
+  - targets: ['todo-api-spring-boot-newman:8080']

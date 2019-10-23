@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sivalabs</groupId>
-	<artifactId>todo-api-spring-boot</artifactId>
+	<artifactId>todo-api-spring-boot-newman</artifactId>
 	<version>0.0.1</version>
-	<name>todo-api-spring-boot</name>
+	<name>todo-api-spring-boot-newman</name>
 	<description>Todo API using SpringBoot</description>
 
 	<properties>

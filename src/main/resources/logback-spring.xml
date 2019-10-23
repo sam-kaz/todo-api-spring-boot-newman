@@ -21,7 +21,7 @@
                         {
                         <!-- we can add some custom fields to be sent with all the log entries.-->
                         <!--make filtering easier in Logstash-->
-                        "app-name": "todo-api-spring-boot",
+                        "app-name": "todo-api-spring-boot-newman",
                         "app-version": "1.0"
                         }
                     </pattern>

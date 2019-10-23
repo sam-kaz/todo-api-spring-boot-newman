@@ -1,9 +1,9 @@
 version: '3.1'
 services:
 
-  todo-api-spring-boot:
+  todo-api-spring-boot-newman:
     build: ..
-    container_name: todo-api-spring-boot
+    container_name: todo-api-spring-boot-newman
     ports:
       - "18080:8080"
       - "18787:8787"
