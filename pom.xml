@@ -22,7 +22,7 @@
 		<jjwt.version>0.6.0</jjwt.version>
 		<jacoco.destFile>${project.build.directory}/coverage-reports/aggregate.exec</jacoco.destFile>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-		<sonar.organization>sam-kaz</sonar.organization>
+		<sonar.organization>sam-kaz-github</sonar.organization>
 		<sonar.exclusions>
 			src/main/java/**/config/*.*,
 			src/main/java/**/entity/*.*,
