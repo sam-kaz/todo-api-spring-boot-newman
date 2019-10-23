@@ -1,0 +1,49 @@
+language: java
+jdk: openjdk8
+sudo: false
+
+services:
+  - docker
+
+env:
+  global:
+  - secure: "SvZjbx6984bWdAgz91E1v1CnsSnP4ar8Rfk4Rk/i8stEZxmKUh687ELWd7PTxZx4KSxBb/J9axmobdHgv5YXw3kWEbRTQf2FiyFFX3FnHMXCKmJgITuLjsiUhZU4lJcKaVsdFyukmA5DyBLLiWBCk2FT26JKWSqXhh7G4Q+0WhYZ22u8LdbvrFxIQIeMnUGRnGrXytBDgGQbUh0OOytaqYEPb3VPwjerbuQXe481MYCLfrI+d4iZw3mkmkdyr7Y+AuWvmD3WRo1+wdG0pI0CZP3teT6rSgMPsiD4zs0vsdL+r4VU+B7Ciozw75GoMzK3BBaWK49RnN0jeRAJ9OLpazJCCKel7xUzcEl2iUX0v6Q5fPui9pV3FNtTeh0QAkubMxequcN8ttP/EA6tfhWvlv3mdxYxop4gyaAtYddR9PaVhfh+3OQjZE/0JZr/H118trRLoyHupA9HlgWwutHwOiOgNDOGkaMMQNPK0mKZwE7lJSXMs61+37Ru9K4Q9rmAAbtBE5z6gvayX9MwUBmc0Vtecg3RPEt1rHPPjX5Vx9GdvRrOEWUWuRF9w2Y6QFST9oYu3kB+vuICIA9uX2zFSZeJj8sYi2F4Wz6SQGJkn1y2toqku+HnpNK2hD6NNZaMb7RksemW0ALn470puI6+J7O6XWMBlxU1PZk7zJ/3LIs="
+  - secure: "jAQQb1iQArMe+Bo7tdDg8QRZVOyec4xwcby9lQkTGrhVpT7BGEUx7iMbNVb1XR2E3R/og5eawI6DKKW9M90iFWMSYCdfRxNcYxmb2qW2kaj2vP5ri83dSJtYpKHeJf2yO0PttvZRapC57Z1sIWrs04om4nZ+otjPnNhXhz0i3eJWeqLhvDQV4Upu5pwMhkKU+tihwh3c2doM0ww9XGe4ZQLH12KDRSJTMby13VSXlYhsJR3h5cnK4yR6A7xebs6Zph4KDz5ITF62zArvgHv9enf+e2RSCljPnljxJin/qy4zLrkEdgqzQfVJSPbQjkUHJqjhPNth0o7m1A0pzng5sjm3UTFfdrK0h+DXu9zaVuHkVfS2dWZ7PwWC1YMOG3mXlpiuMJsTrpMfmxrbga7KiPBsRae81byC0GCbwiOAc5GVoNUHNBR92Fw9LERQatltIJkuo+XHB4EZdbgq8hWZX7nrpPFTs479j1t8zrQP0E6neGc//q74cvKusVzw9Ov+sjrA/65gsVrtN7FKxViBlMWWyP5AYAULjguptmvD8HdBxUuJ33cuze+PKCyXWmYUvY+PgQq8D18SBS0U2s/ZqVnxhrWKlbQ1aLF0sHu/j5FOovOiFzuJDGSMOQYl1eSLK3tTUNXLAoHvsWcwMfqKaDtgUqJEJyvCrfE6tDLPGEA="
+  - secure: "lbXmIOcqMHHjVOFY2WHomv7GiIGpRHV/0BnjpQHJJUAF+tsPU9DX7xwaPQpH3Gftbua5bK0nNI9WtrnxAC+eaxrJAgveKMNza99dRr7BiHQNQGE4MtZNd/Lf9CVhuM9RX1X21K9fWncASC+Bi7Yb/OGxx/64yzWWawhyAlK3oyGZXkqeX/O1THDtJkmh6GxsqOcRAH3SLfIA0yc9HoUSueUe0i23q4SI9R2MURot5S/BwgtnyYLBll09UakrTcwW9ytkeCyfJbW3At+/1cy2KhO3021+/uLBV85Bl2wgdMd75FP5VauxElPrYqwQVqkSdD6IXmSoyeOyl1T7QHc4wbcJCP/5rYwPesIrR4ugCzX1yvPV8qoW+j62IEiCMrDfjPHIYHRZAqQKx27lhOnIhsHVY4punAZvVTvsdD/vd5tHCvqjqGnQrttuoD6075ZTAsaGmQHJe+P4OWU3C14ws1IWU6X8W3qZ97h4gWSInqZnxal4OJqc2OkalPwVJt/LKLBVyLOZ62uQrmIjW8sB4J8xRb22skxm8T98QJJ+64UVI/nPauMpMqO/AFSKc7eHDbrqmJaPbfIdm+HnG0j58LvzkMMmlb2SVHkEB4hVb8UF9F6K2+/7kC9X6JZTC+58K5tDa1GXKWujnUShWEUI29tSmf8F1x6pW82ARKyR++o="
+  - secure: "FG3IjnY9zOVSLr+9XjA2nbEODcjqTjw/OTWg1EjHoZiW4q12gGmz3lOvaYNYeYPzndS3hBWqfcVV/hSdyxF3I8UrLWqYFmREaUWj+n5TE6jsPkBtTTgpplOdJtryihvDz6MU3VqUtdJh1d2/jRMHSDriKzW8MR5eNf2tErEb6qtPK8a4NQOmbN5dDOmTFqTD5cMEbOjLx+CUpQMmjaVVJU2ZgZaZUSws9Z/yh583XoQODmxtiLpK6t2XUBzte4mTkaX55lD7jHKiGrd+HV5/KDg9b+U6Rvxo3Enw/azZx1JzRdaIvpwVqFWvQikUZXZx+foIWVos4bnao/s0rs3QLq1DqPTXw+fR22yiIhEr8VWrou+oiUVuhVjvZn4MoujSkWnyQ65QocjSnnOeExLZruDM2tKePZIyIU+67MOYzDiqiNUQj9VV4jqeCvxzvmaL4duUbQNkXjNbu5P7EEcoXhki3yjCjzwTABRyFRw0lufyZ40XEaIIj8XFgxiRrZclUM/HCVLN3ZhbTWTONQS9vvpPajhZD8xaItsFqBF+sSbZE8iK6JXzto0t/MHXqSw+z1tp04bLmbuuTgtYCNXmRZb2X1x3bmvGVrOA2s8QSRDzwNUsiubaqvrZZY1MzuW8H7JruJEJD0Zx3Zd1sf9U2DaIcqL7yXvyfzTkpB3gN3c="
+  - COMMIT=${TRAVIS_COMMIT::7}
+  - IMAGE_NAME=todo-api-spring-boot
+
+
+addons:
+  sonarcloud:
+    organization: "sam-kaz-github"
+    token:
+      secure: $SONAR_TOKEN
+
+before_install:
+  - chmod +x mvnw
+
+script:
+  - ./mvnw clean install -B
+  - ./mvnw clean verify sonar:sonar -Pcoverage -X
+
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'
+
+after_success:
+  - docker login -u $DOCKER_USER -p $DOCKER_PASS
+  - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH; fi`
+  - export DOCKER_IMAGE=$DOCKER_USER/$IMAGE_NAME
+  - docker build -t $DOCKER_IMAGE:$COMMIT .
+  - docker tag $DOCKER_IMAGE:$COMMIT $DOCKER_IMAGE:$TAG
+  - docker push $DOCKER_IMAGE
+
+deploy:
+  provider: heroku
+  api_key: $HEROKU_API_KEY
+  app: samkaz-todo-api-spring-boot
+  on:
+    branch: release

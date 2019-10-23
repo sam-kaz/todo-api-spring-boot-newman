@@ -1,0 +1,1 @@
+ newman run syed-todolist-api.postman_collection.json -e syed-todo-local-env.postman_environment.json  -d ../todo-credentials.csv

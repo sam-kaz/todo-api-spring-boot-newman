@@ -1,0 +1,1 @@
+ newman run todolist.postman_collection.json -e todo-local-env.postman_environment.json -n 100 --delay-request 500
