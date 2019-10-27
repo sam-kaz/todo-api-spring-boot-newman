@@ -30,3 +30,5 @@ bin/
 
 ### VS Code ###
 .vscode/
+
+./git.sh
